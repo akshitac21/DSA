@@ -8,31 +8,31 @@ Day 3 to 10 : Learn about recursion and backtracking. One of the most important 
 
 Day 11 to 30 : Learn about the basic data structures ->
 
-    (i) Arrays
-    (ii)Linked List
-    (iii) Stacks and Queues
+    (i) Arrays (day 11 - day 20)
+    (ii)Linked List (day 20 - day 22)
+    (iii) Stacks and Queues (day 22 - day 30)
 
 Start giving contests and learn the new concepts that come along the way. You might not do well in the first few but it’s okay! Just keep learning and keep growing.
 
 Day 31 to 45 : Learn about more and a little more complex data structures and algorithms ->
 
-    (i) Searching
+    (i) Searching (day 31 - day 33)
 
     (ii) Sorting {
 
-                 \1\ Bubble Sort
-                 \2\ Insertion Sort
-                 \3\ Selection Sort
-                 \4\ Merge Sort
-                 \5\ Quick Sort
+                 \1\ Bubble Sort 
+                 \2\ Insertion Sort 
+                 \3\ Selection Sort 
+                 \4\ Merge Sort 
+                 \5\ Quick Sort 
 
-    (iii) Hashmaps
+    (iii) Hashmaps  
 
-    (iv)Trees
+    (iv)Trees 
 
-    (v)Heaps
+    (v)Heaps 
 
-    (Vi)Sliding Window
+    (Vi)Sliding Window 
 
 Day 46 to 70 : Learn about DP and Graphs ->
 
