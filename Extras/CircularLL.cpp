@@ -149,6 +149,27 @@ bool detectLoop(Node* head) {
     }
     return false;
 
+    /*
+    if(head==NULL){
+        return false;
+    }
+
+    Node* temp = head->next;
+
+    While(temp != NULL && temp!=head){
+        temp = temp -> next;
+    }
+
+    if(temp == head){
+        return true;
+    }
+    return false;
+
+
+    
+    
+    */
+
 }
 
 
@@ -156,13 +177,13 @@ int main() {
 
     Node* tail = NULL;
 
-   // insertNode(tail, 5, 3);
-    //print(tail);
+   insertNode(tail, 5, 3);
+    print(tail);
 
-  //  insertNode(tail, 3, 5);
-   // print(tail);
+  insertNode(tail, 3, 5);
+  print(tail);
 
-/*
+
     insertNode(tail, 5, 7);
     print(tail);
 
@@ -179,9 +200,8 @@ int main() {
     print(tail);
    
 
-    deleteNode(tail, 5);
-    print(tail);
-     */
+  //  deleteNode(tail, 5);
+   // print(tail);
 
     if(isCircularList(tail)) {
         cout << " Linked List is Circular in nature" << endl;
