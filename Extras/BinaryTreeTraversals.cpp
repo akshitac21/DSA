@@ -95,6 +95,22 @@ void postorder(node* root){ //lrn
     cout << root->data<<" ";
 }
 
+int countLeaf(node* root, int &count){
+    //base case
+    if(root == NULL){
+        return 0;
+    }
+
+    countLeaf(root ->left,count); //lnr
+    if(root -> left==NULL && root->right == NULL){
+        cout<<"Leaf Node: "<<root->data<<endl;
+        count++;
+    }
+    countLeaf(root ->right,count);
+
+    return count;
+}
+
 void buildFromLevelOrder(node* &root){
     queue<node*>q;
 
@@ -157,20 +173,8 @@ int main(){
    buildFromLevelOrder(root);
    levelOrderTraversal(root); //1 3 5 7 11 17 -1 -1 -1 -1 -1 -1 -1
 
+    int count = 0;
+    count = countLeaf(root,count);
+    cout<<"The number of leaf nodes are "<<count<<endl;
     return 0;
 }
-
-/***
-void inorder(BinaryTreeNode<int> * root, int &count){ count number of leaf nodes
-    //base case
-    if(root == NULL){
-        return;
-    }
-
-    inorder(root ->left,count); //lnr
-    if(root -> left==NULL && root->right == NULL){
-        count++;
-    }
-    inorder(root ->right,count);
-}
-***/
