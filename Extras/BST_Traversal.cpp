@@ -16,6 +16,40 @@ class Node{
 
 };
 
+void MorrisTraversal(Node* root)
+{
+    Node *current, *pre;
+ 
+    if (root == NULL)
+        return;
+ 
+    current = root;
+    while (current != NULL) {
+ 
+        if (current->left == NULL) {
+            cout << current->data << " ";
+            current = current->right;
+        }
+        else {
+ 
+            pre = current->left;
+            while (pre->right != NULL && pre->right != current)
+                pre = pre->right;
+ 
+            if (pre->right == NULL) {
+                pre->right = current;
+                current = current->left;
+            }
+ 
+            else {
+                pre->right = NULL;
+                cout << current->data << " ";
+                current = current->right;
+            } 
+        } 
+    }
+}
+
 void lot(Node* root){
     queue<Node*>q;
 
@@ -110,14 +144,13 @@ void takeInput(Node* &root){
     }
 }
 
-
 int main(){
 
     Node* root = NULL;
 
     cout<<"Enter data to create BST"<<endl;
     takeInput(root);
-    cout<<"Printing BST"<<endl;
+    cout<<"Printing BST : Level Order"<<endl;
     lot(root);
     cout<<"\n Inorder BST"<<endl;
     inorder(root);
@@ -125,4 +158,8 @@ int main(){
     preorder(root);
     cout<<"\n Postordering BST"<<endl;
     postorder(root);
+
+    cout<<"\nMorris Traversal: "<<endl;
+    MorrisTraversal(root);
+
 }
