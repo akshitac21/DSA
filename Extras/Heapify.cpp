@@ -70,20 +70,20 @@ class heap {
 };
 
 void heapify(int arr[], int n, int i){
-    int largest = i;
-    int left = 2*i;
-    int right = 2*i +1;
+    int smallest = i;
+    int left = 2*i+1;
+    int right = 2*i +2;
 
-    if(left < n && arr[left] > arr[largest]){
-        largest = left;
+    if(left < n && arr[smallest] > arr[left]){
+        smallest = left;
     }
-    if(right < n && arr[right] > arr[largest]){
-        largest = right;
+    if(right < n && arr[smallest] > arr[right]){
+        smallest = right;
     }
 
-    if(largest != i){
-        swap(arr[largest], arr[i]);
-        heapify(arr, n, largest); //further processing
+    if(smallest != i){
+        swap(arr[smallest], arr[i]);
+        heapify(arr, n, smallest);
     }
 }
 
@@ -97,13 +97,13 @@ int main(){
 
     //h.DeleteFromHeap();
 
-    int arr[6] = {-1, 54, 53, 55, 52, 50};
-    int n = 6;
-    for(int i=n/2; i>0; i--){ //n/2 because we do it for non leaf nodes
+    int arr[5] = {9,3,2,6,7};
+    int n = 5;
+    for(int i=n/2-1; i>=0; i--){ //n/2 because we do it for non leaf nodes
         heapify(arr, n, i);
     }
     cout<<"Printing the Heapify array: "<<endl;
-    for(int i=1; i<n; i++){
+    for(int i=0; i<n; i++){
         cout<<arr[i]<<" ";
     }cout<<endl; 
 
