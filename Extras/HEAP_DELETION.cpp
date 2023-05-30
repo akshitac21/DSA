@@ -37,7 +37,7 @@ class heap {
         }cout<<endl;
     }
 
-    void DeleteFromHeap(){
+  void DeleteFromHeap(){
         if(size==0){
             cout<<"Nothing to delete"<<endl;
             return;
@@ -50,15 +50,15 @@ class heap {
 
         //step 3: take root node to its correct position
         int i = 1;
-        while(i<size){
+        while(i<=size){
             int leftIndex = 2*i; //lchild
-            int rightIndex = 2*i - 1; //rchild
+            int rightIndex = 2*i + 1; //rchild
 
-            if(leftIndex < size && arr[i]<arr[leftIndex]){
+            if(leftIndex < size && arr[i]<arr[leftIndex] && arr[leftIndex] > arr[rightIndex]){
                 swap(arr[i], arr[leftIndex]);
                 i = leftIndex;
             }
-            else if(rightIndex < size && arr[i] < arr[rightIndex]){
+            else if(rightIndex < size && arr[i] < arr[rightIndex] && arr[leftIndex] < arr[rightIndex]){
                 swap(arr[i], arr[rightIndex]);
                 i = rightIndex;
             }
