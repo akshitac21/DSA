@@ -40,3 +40,47 @@ int main(){
     return 0;
 
 }
+
+/////////////////////////////////////////////////////////////
+
+#include <iostream>
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+
+void solve(int arr[], int n){
+
+    set<int> set;
+
+    for(int i=0; i<n; i++){
+        set.insert(arr[i]);
+    }
+
+    int ans=0;
+    int count = 0;
+
+    for(auto i : set){
+
+        if(set.count(i-1)){
+            count++;
+        }
+        else{
+            count = 1;
+        }
+
+        ans = max(count,ans);
+    }
+    
+    cout<<ans;
+    
+}
+
+int main(){
+
+    int arr[] = {2,6,1,9,4,5,3};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    solve(arr,n);
+
+    return 0;
+
+}
