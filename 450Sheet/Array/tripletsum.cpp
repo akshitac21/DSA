@@ -23,10 +23,43 @@ void solve(int arr[],int size, int x){
 
     if(flag) cout<<"YES";
     else cout<<"NO";
+    
+}
+
+/*
+    void solve(int arr[],int size, int x){
+
+    unordered_set<int>set;
+    int flag = 0;
+
+    for(int i=0; i<size-2; i++){
+        int start=i+1;
+        int end = size-1;
+
+        while(start<end){
+            int sum = arr[i]+arr[start]+arr[end];
+
+            if(sum==x){
+                flag = 1;
+                break;
+            }
+            else if(sum < x){
+                start++;
+            }
+            else{
+                end--;
+            }
+        }
+    }
+
+    if(flag) cout<<"YES";
+    else cout<<"NO";
 
 
     
 }
+
+*/
 
 int main(){
 
