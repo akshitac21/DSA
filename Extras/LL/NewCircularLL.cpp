@@ -51,6 +51,42 @@ void print(Node* tail){
     cout<<endl;
 }
 
+bool isCircular(Node* head){
+    if(head == NULL){
+        return true;
+    }
+
+    Node* temp = head->next;
+    while(temp != NULL && temp != head){
+        temp = temp->next;
+    }
+
+    if(temp==head){
+        return true;
+    }
+    return false;
+}
+
+bool detectLoop(Node* head){
+    if(head==NULL){
+        return false;
+    }
+
+    map<Node*, bool>visited;
+    Node* it = head;
+
+    while(it != NULL){
+        if(visited[it]==true){
+            return true;
+        }
+
+        visited[it]=true;
+        it = it->next;
+    }
+
+    return false;
+}
+
 int main(){
 
     Node* tail = NULL;
@@ -62,4 +98,7 @@ int main(){
     insertBegin(tail,80);
     insertBegin(tail,99);
     print(tail);
+
+    cout<<"\nIs it a circular loop? "<<isCircular(tail)<<endl;
+
 }
