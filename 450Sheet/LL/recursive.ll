@@ -30,7 +30,8 @@ public:
 
 		Node* rest = reverseRecursive(curr->next);
 		curr->next->next = curr;
-		curr->next = NULL;
+		curr->next = head;
+		had->next = NULL;
 		return rest;
 	}
 
