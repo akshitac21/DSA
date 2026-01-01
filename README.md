@@ -1,4 +1,4 @@
-# 🚀 DSA Mastery Roadmap (6–7 Months)
+# DSA Mastery Roadmap 
 
 A structured, problem-driven plan to master Data Structures & Algorithms for interviews, contests, and real problem-solving.
 
@@ -8,7 +8,7 @@ A structured, problem-driven plan to master Data Structures & Algorithms for int
 
 ---
 
-## 📌 Phase 0: Absolute Foundations (Week 1)
+## Phase 0: Absolute Foundations (Week 1)
 
 ### Time & Space Complexity
 - Big-O, Big-Ω, Big-Θ
@@ -16,11 +16,11 @@ A structured, problem-driven plan to master Data Structures & Algorithms for int
 - Space complexity basics
 - Amortized analysis (basic intuition)
 
-✅ Goal: Look at code and *instantly* estimate complexity.
+Goal: Look at code and *instantly* estimate complexity.
 
 ---
 
-## 📦 Phase 1: Core Data Structures (Month 1–2)
+## Phase 1: Core Data Structures (Month 1–2)
 
 ### Arrays
 - Basics & operations
@@ -46,17 +46,17 @@ A structured, problem-driven plan to master Data Structures & Algorithms for int
 ### Stacks & Queues
 - Stack operations
 - Queue & deque
-- Monotonic stack (🔥 important)
+- Monotonic stack
 - Next greater element
 - Valid parentheses
 
-📌 Practice Focus:
+Practice Focus:
 - Arrays + HashMaps = 40% of interview problems  
 - Solve **at least 80–100 problems** in this phase
 
 ---
 
-## 🧠 Phase 2: Core Techniques (Month 3)
+## Phase 2: Core Techniques (Month 3)
 
 ### Recursion & Backtracking
 - Base cases & recursion trees
@@ -65,8 +65,6 @@ A structured, problem-driven plan to master Data Structures & Algorithms for int
 - Combination sum
 - N-Queens
 - Backtracking vs brute force
-
-⚠️ If recursion scares you, good — that means it’s working.
 
 ---
 
@@ -96,7 +94,7 @@ A structured, problem-driven plan to master Data Structures & Algorithms for int
 
 ---
 
-## 🌲 Phase 3: Advanced Data Structures (Month 4–5)
+## Phase 3: Advanced Data Structures (Month 4–5)
 
 ### Trees
 - Binary tree basics
@@ -134,7 +132,7 @@ A structured, problem-driven plan to master Data Structures & Algorithms for int
 
 ---
 
-## 🧩 Phase 4: Graphs & Union-Find (Month 6)
+## Phase 4: Graphs & Union-Find (Month 6)
 
 ### Graph Fundamentals
 - Adjacency list vs matrix
@@ -158,11 +156,9 @@ A structured, problem-driven plan to master Data Structures & Algorithms for int
 - Union by rank
 - Path compression
 
-📌 Graphs are scary until they aren’t. Then they’re fun.
-
 ---
 
-## 🧠 Phase 5: Dynamic Programming (Month 6–7)
+## Phase 5: Dynamic Programming (Month 6–7)
 
 ### DP Foundations
 - Recursion → Memoization → Tabulation
@@ -179,12 +175,9 @@ A structured, problem-driven plan to master Data Structures & Algorithms for int
 - DP on grids
 - DP on trees (intro)
 
-⚠️ DP is not about memorizing solutions.  
-It’s about **thinking in states**.
-
 ---
 
-## 🎯 Phase 6: Extra Edge Topics (Optional but Powerful)
+## Phase 6: Extra Edge Topics
 
 ### Number Theory
 - GCD / LCM
