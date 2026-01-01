@@ -2,24 +2,17 @@
 #include <iostream>
 using namespace std;
 
-void insertionSort(int arr[], int n){ //4,12,11,20
-    for(int i=1; i<n; i++){ //till n-1, starts from 12
+void insertionSort(int arr[], int n){
+    for(int i=1; i<n; i++){ //till n-1
 
-        int temp = arr[i]; //front element; temp=12, temp=11,
-        int j = i-1; //prev element; j=0, j=1
-
-        for(; j>=0; j--){ //prev elements being compared <-
-            if(arr[j] > temp){ //if the prev element is greater than temp
-                //shift
-                arr[j+1] = arr[j]; //4 !< 12 so break;
-            }
-            else break;
+        int key = arr[i];
+        int j = i-1;
+        
+        while(j>=0 && arr[j]>key){
+            arr[j+1] = arr[j];
+            j--;
         }
-        arr[j+1] = temp; //temp has been put in its place; arr[1]=12
-    }
-
-    for(int i=0; i<n; i++){
-        cout<<arr[i]<<" ";
+        arr[j+1] = key;
     }
 }
 
