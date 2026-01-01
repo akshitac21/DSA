@@ -1,62 +1,204 @@
-## DSA - Data Structures and Algorithms
+# 🚀 DSA Mastery Roadmap (6–7 Months)
 
-An indepth preparation to cover most of DSA concepts while solving problems
+A structured, problem-driven plan to master Data Structures & Algorithms for interviews, contests, and real problem-solving.
 
-Day 1 & 2 : Learn about space and time complexity. One of the most important part of programming is knowing the complexity of the code you writing.
+> Rule of thumb:  
+> **Consistency > Speed**  
+> 1–3 problems daily beats weekend heroics.
 
-Day 3 to 10 : Learn about recursion and backtracking. One of the most important and most useful Concepts.
+---
 
-Day 11 to 30 : Learn about the basic data structures ->
+## 📌 Phase 0: Absolute Foundations (Week 1)
 
-    (i) Arrays (day 11 - day 20)
-    (ii)Linked List (day 20 - day 22)
-    (iii) Stacks and Queues (day 22 - day 30)
+### Time & Space Complexity
+- Big-O, Big-Ω, Big-Θ
+- Best / Average / Worst case
+- Space complexity basics
+- Amortized analysis (basic intuition)
 
-Start giving contests and learn the new concepts that come along the way. You might not do well in the first few but it’s okay! Just keep learning and keep growing.
+✅ Goal: Look at code and *instantly* estimate complexity.
 
-Day 31 to 45 : Learn about more and a little more complex data structures and algorithms ->
+---
 
-    (i) Searching (day 31 - day 33)
+## 📦 Phase 1: Core Data Structures (Month 1–2)
 
-    (ii) Sorting {
+### Arrays
+- Basics & operations
+- Prefix sums
+- Sliding window (fixed + variable)
+- Two pointers (intro)
+- Kadane’s Algorithm
 
-                 \1\ Bubble Sort 
-                 \2\ Insertion Sort 
-                 \3\ Selection Sort 
-                 \4\ Merge Sort 
-                 \5\ Quick Sort 
+### Hash Tables
+- HashMap vs HashSet
+- Frequency counting
+- Subarray sum problems
+- Two-sum patterns
+- Collision intuition (not implementation hell)
 
-    (iii) Hashmaps  
+### Linked Lists
+- Singly & doubly linked lists
+- Fast & slow pointers
+- Reverse linked list (iterative + recursive)
+- Cycle detection
+- Merge two sorted lists
 
-    (iv)Trees 
+### Stacks & Queues
+- Stack operations
+- Queue & deque
+- Monotonic stack (🔥 important)
+- Next greater element
+- Valid parentheses
 
-    (v)Heaps 
+📌 Practice Focus:
+- Arrays + HashMaps = 40% of interview problems  
+- Solve **at least 80–100 problems** in this phase
 
-    (Vi)Sliding Window 
+---
 
-Day 46 to 70 : Learn about DP and Graphs ->
+## 🧠 Phase 2: Core Techniques (Month 3)
 
-    (i) Graph ->
+### Recursion & Backtracking
+- Base cases & recursion trees
+- Subsets
+- Permutations
+- Combination sum
+- N-Queens
+- Backtracking vs brute force
 
-                 \1\ Breadth First Search [BFS]  
-                 \2\ Depth First Search [DFS] 
-                 \3\ Shortest path from source to all vertices: Dijkstra 
-                 \4\  Shortest path from every vertex to every other vertex: Floyd Warshall 
-                 \5\  Minimum Spanning tree: Prim \6\  Minimum Spanning Tree: Kruskal  
-                 \7\  Strongly connected component kosaraju’s algorithm 
-                 \8\ Topological Sort  
-                 \9\ Shortest Path from source to all vertices with negative edges: Bellman ford   
-                 \10\ Normal DSU   
-                 \11\ DSU by rank
+⚠️ If recursion scares you, good — that means it’s working.
 
-    (ii) Dynamic Programming
+---
 
-Day 71 to 80 : Learn about OOPs (You’ll get something amazing on this by the time you reach here)
+### Searching Algorithms
+- Linear search
+- Binary search
+- Binary search on answer
+- Lower/upper bound patterns
 
-Day 80 to 90 : Some more topics which will help you perform better in online tests
+---
 
-    (i) Number Theory
+### Sorting Algorithms
+- Bubble, Selection, Insertion (learn, don’t worship)
+- Merge Sort
+- Quick Sort
+- Stability & in-place sorting
+- When to use which sort
 
-    (ii) Bit Manipulation
+---
 
-    (iii) Tries
+### Bit Manipulation
+- Bitwise operators
+- XOR tricks
+- Set / unset / toggle bits
+- Power of two problems
+- Subset generation using bits
+
+---
+
+## 🌲 Phase 3: Advanced Data Structures (Month 4–5)
+
+### Trees
+- Binary tree basics
+- DFS (pre, in, post)
+- BFS (level order)
+- Height & depth
+- Diameter of tree
+- Path sum problems
+
+---
+
+### Binary Search Trees (BST)
+- BST properties
+- Insert, delete, search
+- Validate BST
+- Range queries
+- Lowest Common Ancestor
+
+---
+
+### Heaps (Priority Queues)
+- Min heap & max heap
+- Heap operations
+- Top-K elements
+- Kth largest/smallest
+- Heap vs sorting
+
+---
+
+### Tries
+- Prefix trees
+- Insert / search / delete
+- Word search
+- Autocomplete logic
+
+---
+
+## 🧩 Phase 4: Graphs & Union-Find (Month 6)
+
+### Graph Fundamentals
+- Adjacency list vs matrix
+- BFS & DFS
+- Connected components
+- Cycle detection
+
+### Graph Algorithms
+- Dijkstra’s Algorithm
+- Bellman-Ford
+- Floyd-Warshall
+- Topological Sort
+- Kosaraju’s Algorithm (SCC)
+
+### Minimum Spanning Tree
+- Prim’s Algorithm
+- Kruskal’s Algorithm
+
+### Union-Find (DSU)
+- Normal DSU
+- Union by rank
+- Path compression
+
+📌 Graphs are scary until they aren’t. Then they’re fun.
+
+---
+
+## 🧠 Phase 5: Dynamic Programming (Month 6–7)
+
+### DP Foundations
+- Recursion → Memoization → Tabulation
+- State definition
+- Transition logic
+
+### Classic DP Problems
+- Fibonacci
+- Climbing stairs
+- Knapsack (0/1, unbounded)
+- LIS
+- LCS
+- Matrix DP
+- DP on grids
+- DP on trees (intro)
+
+⚠️ DP is not about memorizing solutions.  
+It’s about **thinking in states**.
+
+---
+
+## 🎯 Phase 6: Extra Edge Topics (Optional but Powerful)
+
+### Number Theory
+- GCD / LCM
+- Sieve of Eratosthenes
+- Modular arithmetic
+- Fast exponentiation
+
+### Greedy Algorithms
+- Activity selection
+- Interval scheduling
+- Huffman encoding
+- Greedy vs DP intuition
+
+### OOPs (Interview Perspective)
+- SOLID principles
+- Inheritance vs composition
+- Common design patterns (high level)
