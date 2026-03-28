@@ -6,6 +6,7 @@ int main()
 {
     vector<int> v;
     vector<int> a(5,1); //size is 5, initializes all 5 elemets with 1
+    a.emplace_back(2);
     vector<int> last(a); //copies all the elements of a into last vector
 
      cout<<"Print last "<<endl;
@@ -14,7 +15,7 @@ int main()
         cout<<i<<" ";
     }
 
-    cout<<"Capacity -> "<<v.capacity()<<endl;
+    cout<<"\nCapacity of vector v -> "<<v.capacity()<<endl;
 
     v.push_back(1);
     cout<<"Capacity -> "<<v.capacity()<<endl;
